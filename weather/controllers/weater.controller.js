@@ -21,8 +21,8 @@ angular.module('weather')
             }
         });
     };
-    $scope.remove = function(array, index){
-        array.splice(index, 1);
+    $scope.remove = function(index){
+        $scope.sitiesList.splice(index, 1);
     }
 
 });

@@ -3,6 +3,6 @@
         <span class="weather__item city__name">{{city.name}}</span>
         <span class="weather__item icon"> <i class="wi-forecast-io-{{city.icon}}"></i></span>
         <span class="weather__item">{{city.temperature | number:1}} °C</span>
-        <span class="weather__item city__remove__icon" ng-click="remove(sitiesList, $index)"> <i class="fas fa-window-close"></i> </span>
+        <span class="weather__item city__remove__icon" ng-click="remove({index: $index})"> <i class="fas fa-window-close"></i> </span>
     </div>
 </div>
