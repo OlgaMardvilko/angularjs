@@ -7,16 +7,17 @@ angular.module('weather')
         tranclude: true,
         scope: {
             sitiesList: '=sitiesList',
-            addCity: '='
+            addCity: '=',
+            remove: '&'
         },
         link: function($scope) {
             var cancelAddWatherList = $rootScope.$on('addWatherList', function(event, data){
                 $scope.addCity(data);
             })
             $scope.$on('$destroy', cancelAddWatherList);
-            $scope.remove = function(array, index){
-                array.splice(index, 1);
-            }
+            // $scope.remove = function(array, index){
+            //     array.splice(index, 1);
+            // }
         },
         templateUrl: 'weather/templates/weather-list.template.html'
     };
