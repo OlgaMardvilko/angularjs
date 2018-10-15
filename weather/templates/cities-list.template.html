@@ -1,0 +1,7 @@
+
+<form >
+    <select ng-model="citiesItem">
+        <option value="{{city.name}}" ng-repeat="city in cities | orderBy:'name'">{{city.name}}</option>>
+    </select>
+    <button ng-click="emitEvent();">Add</button>
+</form>

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Paris",
+        "icon":"partly-cloudy-day",
+        "temperature": 18
+    },
+    {
+        "name": "New York",
+        "icon":"clear-day",
+        "temperature": 12
+    },
+    {
+        "name": "Minsk",
+        "icon":"rain",
+        "temperature": 4
+    },
+    {
+        "name": "London",
+        "icon":"partly-cloudy-day",
+        "temperature": 28
+    }
+
+]

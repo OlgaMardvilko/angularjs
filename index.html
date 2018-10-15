@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS Weather now</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/weather-icons.min.css" />
+       
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.js"></script>
+    </head>
+    <body ng-app="weather" ng-controller='ctrl'>
+        <main-app></main-app>
+        <script src="weather/weather.module.js"></script>
+        <script src="weather/controllers/weater.controller.js"></script>
+        <script src="weather/services/cities.constants.js"></script>
+        <script src="weather/services/weather.serviice.js"></script>
+        <script src="weather/directives/mainApp.directive.js"></script>
+        <script src="weather/directives/sitiesList.directive.js"></script>
+        <script src="weather/directives/weatherList.directive.js"></script>
+    </body>
+</html>
