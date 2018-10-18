@@ -5,6 +5,10 @@ angular.module('weather')
     return {
         restrict: 'E',
         transclude: true,
+        link: function($scope, element, attr) {
+            console.log(element);
+            console.log(attr);
+        },
         templateUrl: 'weather/templates/main-app.template.html'
     };
 })

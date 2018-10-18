@@ -10,7 +10,9 @@ angular.module('weather')
             addCity: '=',
             remove: '&'
         },
-        link: function($scope) {
+        link: function($scope, element, attr) {
+            console.log(element);
+            console.log(attr);
             var cancelAddWatherList = $rootScope.$on('addWatherList', function(event, data){
                 $scope.addCity(data);
             })
