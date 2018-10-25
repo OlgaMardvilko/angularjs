@@ -17,7 +17,12 @@ module.exports = function(config) {
     files: [
       './node_modules/angular/angular.js',
       './node_modules/angular-mocks/angular-mocks.js',
+      './node_modules/angular-animate/angular-animate.js',
       './weather/weather.module.js',
+      './weather/controllers/weater.controller.js',
+      './weather/directive/*.js',
+      './weather/services/*.js',
+      './weather/*.js',
       './test/unit/*.js'
     ],
 
@@ -36,7 +41,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port
